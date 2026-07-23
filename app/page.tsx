@@ -12,6 +12,7 @@ import { Beat, beats } from "@/data/beats";
 export default function Home() {
   const [entered, setEntered] = useState(false);
   const [selectedBeat, setSelectedBeat] = useState<Beat | null>(null);
+  const [autoPlay, setAutoPlay] = useState(false);
 
   const handleNextBeat = () => {
     if (!selectedBeat) return;
@@ -38,6 +39,24 @@ export default function Home() {
     setSelectedBeat(beats[previousIndex]);
   };
 
+  const handleShuffleBeat = () => {
+    if (beats.length === 0) return;
+
+    if (!selectedBeat) {
+      setSelectedBeat(beats[Math.floor(Math.random() * beats.length)]);
+      setAutoPlay(true);
+      return;
+    }
+
+    let randomIndex;
+
+    do {
+      randomIndex = Math.floor(Math.random() * beats.length);
+    } while (beats[randomIndex].id === selectedBeat.id);
+
+    setSelectedBeat(beats[randomIndex]);
+  };
+
   return (
     <>
       <StarField />
@@ -45,18 +64,23 @@ export default function Home() {
       {!entered ? (
         <Landing onEnter={() => setEntered(true)} />
       ) : (
-        <>
+        <main className="pb-32">
           <Showcase
             selectedBeat={selectedBeat}
-            onSelectBeat={setSelectedBeat}
+            onSelectBeat={(beat) => {
+              setSelectedBeat(beat);
+              setAutoPlay(true);
+            }}
           />
 
           <AudioPlayer
             beat={selectedBeat}
+            autoPlay={autoPlay}
             onNext={handleNextBeat}
             onPrevious={handlePreviousBeat}
+            onShuffle={handleShuffleBeat}
           />
-        </>
+        </main>
       )}
     </>
   );

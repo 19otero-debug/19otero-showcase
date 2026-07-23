@@ -30,7 +30,7 @@ export default function Landing({ onEnter }: LandingProps) {
       }`}
     >
       <div className="text-center">
-        <p className="mb-3 text-xs tracking-[0.6em] text-gray-400">
+        <p className="mb-4 text-xs tracking-[0.6em] text-gray-400">
           @19OTERO
         </p>
 
@@ -42,24 +42,30 @@ export default function Landing({ onEnter }: LandingProps) {
           onClick={handleClick}
           disabled={leaving}
           className="
-            mt-6
+            mt-14
             cursor-pointer
-            border
-            border-white
-            px-7
-            py-2
-            text-xs
-            tracking-[0.35em]
+            rounded-full
+            border-2
+            border-white/40
+            px-24
+            py-8
+            text-3xl
+            font-semibold
+            tracking-[0.25em]
+            uppercase
             text-white
             transition-all
             duration-300
+            hover:scale-105
+            hover:border-white
             hover:bg-white
             hover:text-black
+            active:scale-95
             disabled:pointer-events-none
           "
         >
-          SHOWCASE
-        </button>
+          ENTER
+      </button>
       </div>
     </main>
   );

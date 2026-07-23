@@ -9,20 +9,25 @@ import {
   Play,
   Pause,
   Volume2,
+  Shuffle,
 } from "lucide-react";
 import { Beat } from "@/data/beats";
 
 
 interface AudioPlayerProps {
   beat: Beat | null;
+  autoPlay: boolean;
   onNext: () => void;
   onPrevious: () => void;
+  onShuffle: () => void;
 }
 
 export default function AudioPlayer({
   beat,
+  autoPlay,
   onNext,
   onPrevious,
+  onShuffle,
 }: AudioPlayerProps) {
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const wasPlayingRef = useRef(false);
@@ -35,7 +40,7 @@ export default function AudioPlayer({
   useEffect(() => {
     if (!audioRef.current || !beat) return;
 
-    const shouldResume = wasPlayingRef.current;
+    const shouldResume = wasPlayingRef.current || autoPlay;
 
     audioRef.current.pause();
     audioRef.current.src = beat.audio;
@@ -53,7 +58,7 @@ export default function AudioPlayer({
     } else {
       setIsPlaying(false);
     }
-  }, [beat]);
+  }, [beat, autoPlay]);
 
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
@@ -113,6 +118,13 @@ export default function AudioPlayer({
     };
   }, [onNext, onPrevious]);
 
+
+  useEffect(() => {
+    if (!audioRef.current) return;
+
+    audioRef.current.volume = volume;
+  }, [volume]);
+
   if (!beat) return null;
 
   const handlePlayPause = async () => {
@@ -160,14 +172,13 @@ export default function AudioPlayer({
           setCurrentTime(audioRef.current?.currentTime || 0)
         }
         onEnded={() => {
-          setIsPlaying(false);
-          setCurrentTime(0);
-          wasPlayingRef.current = false;
+          wasPlayingRef.current = true;
+          onNext();
         }}
       />
       
 
-      <div className="fixed bottom-0 left-0 right-0 z-50 border-t border-white/10 bg-black/85 backdrop-blur-2xl">
+      <div className="sticky bottom-0 left-0 right-0 z-50 border-t border-white/10 bg-black/85 backdrop-blur-2xl">
         <div className="mx-auto max-w-7xl px-8 py-5">
 
           <div className="flex items-center gap-6">
@@ -261,60 +272,74 @@ export default function AudioPlayer({
               </div>
             </div>
 
-            <div className="flex flex-col items-center gap-5">
+            <div className="flex items-center gap-6 shrink-0">
 
-              <div className="flex items-center gap-4">
+              {/* Previous */}
 
-                <button
-                  onClick={() => {
-                    wasPlayingRef.current = isPlaying;
-                    onPrevious();
-                  }}
-                  className="flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/5 text-white transition hover:scale-105 hover:border-violet-500 hover:bg-violet-500/15"
-                >
-                  <SkipBack size={18} />
-                </button>
+              <button
+                onClick={() => {
+                  wasPlayingRef.current = isPlaying;
+                  onPrevious();
+                }}
+                className="flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/5 text-white transition hover:scale-105 hover:border-violet-500 hover:bg-violet-500/15"
+              >
+                <SkipBack size={18} />
+              </button>
 
-                <button
-                  onClick={handlePlayPause}
-                  className="flex h-14 w-14 items-center justify-center rounded-full bg-violet-600 text-white shadow-lg shadow-violet-600/30 transition hover:scale-105 hover:bg-violet-500"
-                >
-                  <AnimatePresence mode="wait" initial={false}>
-                    {isPlaying ? (
-                      <motion.div
-                        key="pause"
-                        initial={{ opacity: 0, scale: 0.8 }}
-                        animate={{ opacity: 1, scale: 1 }}
-                        exit={{ opacity: 0, scale: 0.8 }}
-                        transition={{ duration: 0.15 }}
-                      >
-                        <Pause size={24} />
-                      </motion.div>
-                    ) : (
-                      <motion.div
-                        key="play"
-                        initial={{ opacity: 0, scale: 0.8 }}
-                        animate={{ opacity: 1, scale: 1 }}
-                        exit={{ opacity: 0, scale: 0.8 }}
-                        transition={{ duration: 0.15 }}
-                      >
-                        <Play size={24} className="ml-1" />
-                      </motion.div>
-                    )}
-                  </AnimatePresence>
-                </button>
+              {/* Play */}
 
-                <button
-                  onClick={() => {
-                    wasPlayingRef.current = isPlaying;
-                    onNext();
-                  }}
-                  className="flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/5 text-white transition hover:scale-105 hover:border-violet-500 hover:bg-violet-500/15"
-                >
-                  <SkipForward size={18} />
-                </button>
+              <button
+                onClick={handlePlayPause}
+                className="flex h-14 w-14 items-center justify-center rounded-full bg-violet-600 text-white shadow-lg shadow-violet-600/30 transition hover:scale-105 hover:bg-violet-500"
+              >
+                <AnimatePresence mode="wait" initial={false}>
+                  {isPlaying ? (
+                    <motion.div
+                      key="pause"
+                      initial={{ opacity: 0, scale: 0.8 }}
+                      animate={{ opacity: 1, scale: 1 }}
+                      exit={{ opacity: 0, scale: 0.8 }}
+                      transition={{ duration: 0.15 }}
+                    >
+                      <Pause size={24} />
+                    </motion.div>
+                  ) : (
+                    <motion.div
+                      key="play"
+                      initial={{ opacity: 0, scale: 0.8 }}
+                      animate={{ opacity: 1, scale: 1 }}
+                      exit={{ opacity: 0, scale: 0.8 }}
+                      transition={{ duration: 0.15 }}
+                    >
+                      <Play size={24} className="ml-1" />
+                    </motion.div>
+                  )}
+                </AnimatePresence>
+              </button>
 
-              </div>              <div className="flex items-center gap-3 w-48">
+              {/* Next */}
+              <button
+                onClick={() => {
+                  wasPlayingRef.current = isPlaying;
+                  onShuffle();
+                }}
+                className="flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/5 text-white transition hover:scale-105 hover:border-violet-500 hover:bg-violet-500/15"
+              >
+                <Shuffle size={18} />
+              </button>
+              <button
+                onClick={() => {
+                  wasPlayingRef.current = isPlaying;
+                  onNext();
+                }}
+                className="flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/5 text-white transition hover:scale-105 hover:border-violet-500 hover:bg-violet-500/15"
+              >
+                <SkipForward size={18} />
+              </button>
+
+              {/* Volumen */}
+
+              <div className="flex items-center gap-3 w-56">
 
                 <Volume2
                   size={18}
@@ -327,9 +352,7 @@ export default function AudioPlayer({
                   max={1}
                   step={0.01}
                   value={volume}
-                  onChange={(e) =>
-                    setVolume(Number(e.target.value))
-                  }
+                  onChange={(e) => setVolume(Number(e.target.value))}
                   className="h-1 w-full cursor-pointer accent-violet-500"
                 />
 

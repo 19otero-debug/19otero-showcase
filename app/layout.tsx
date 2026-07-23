@@ -13,8 +13,55 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "@19otero showcase",
-  description: "Official producer showcase of @19otero",
+  title: {
+    default: "19OTERO | Beat Showcase",
+    template: "%s | 19OTERO",
+  },
+
+  description:
+    "Original Trap, Rage & Breakcore productions by 19OTERO. Explore the latest beats and discover my catalog.",
+
+  keywords: [
+    "19OTERO",
+    "music producer",
+    "producer",
+    "beatmaker",
+    "beats",
+    "trap beats",
+    "rage beats",
+    "breakcore",
+    "instrumentals",
+    "music",
+  ],
+
+  authors: [
+    {
+      name: "19OTERO",
+    },
+  ],
+
+  creator: "19OTERO",
+
+  openGraph: {
+    title: "19OTERO | Premium Beat Showcase",
+    description:
+      "Original Trap, Rage & Breakcore productions by 19OTERO.",
+    type: "website",
+    locale: "en_US",
+    siteName: "19OTERO Showcase",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "19OTERO | Premium Beat Showcase",
+    description:
+      "Original Trap, Rage & Breakcore productions by 19OTERO.",
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function RootLayout({
