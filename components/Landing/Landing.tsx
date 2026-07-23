@@ -25,16 +25,16 @@ export default function Landing({ onEnter }: LandingProps) {
 
   return (
     <main
-      className={`relative z-10 flex min-h-screen items-center justify-center transition-all duration-500 ${
+      className={`relative z-10 flex min-h-screen items-center justify-center px-6 transition-all duration-500 ${
         leaving ? "scale-95 opacity-0" : "scale-100 opacity-100"
       }`}
     >
       <div className="text-center">
-        <p className="mb-4 text-xs tracking-[0.6em] text-gray-400">
+        <p className="mb-4 text-[10px] tracking-[0.45em] text-gray-400 sm:text-xs sm:tracking-[0.6em]">
           @19OTERO
         </p>
 
-        <h1 className="text-7xl font-light tracking-[0.25em] text-white md:text-8xl">
+        <h1 className="text-5xl font-light tracking-[0.12em] text-white sm:text-6xl sm:tracking-[0.18em] md:text-8xl md:tracking-[0.25em]">
           SHOWCASE
         </h1>
 
@@ -42,16 +42,16 @@ export default function Landing({ onEnter }: LandingProps) {
           onClick={handleClick}
           disabled={leaving}
           className="
-            mt-14
+            mt-10
             cursor-pointer
             rounded-full
             border-2
             border-white/40
-            px-24
-            py-8
-            text-3xl
+            px-10
+            py-4
+            text-xl
             font-semibold
-            tracking-[0.25em]
+            tracking-[0.2em]
             uppercase
             text-white
             transition-all
@@ -62,10 +62,19 @@ export default function Landing({ onEnter }: LandingProps) {
             hover:text-black
             active:scale-95
             disabled:pointer-events-none
+            sm:mt-12
+            sm:px-16
+            sm:py-5
+            sm:text-2xl
+            md:mt-14
+            md:px-24
+            md:py-8
+            md:text-3xl
+            md:tracking-[0.25em]
           "
         >
           ENTER
-      </button>
+        </button>
       </div>
     </main>
   );
