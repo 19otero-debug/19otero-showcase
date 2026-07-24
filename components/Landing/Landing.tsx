@@ -39,6 +39,10 @@ export default function Landing({ onEnter }: LandingProps) {
         </h1>
 
         <button
+        style={{
+  position: "relative",
+  zIndex: 9999,
+}}
           onClick={handleClick}
           disabled={leaving}
           className="
@@ -74,6 +78,7 @@ export default function Landing({ onEnter }: LandingProps) {
           "
         >
           ENTER
+          
         </button>
       </div>
     </main>

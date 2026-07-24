@@ -13,9 +13,26 @@ export default function Home() {
   const [entered, setEntered] = useState(false);
   const [selectedBeat, setSelectedBeat] = useState<Beat | null>(null);
   const [autoPlay, setAutoPlay] = useState(false);
+  const [shuffleEnabled, setShuffleEnabled] = useState(false);
+  const [shuffleQueue, setShuffleQueue] = useState<Beat[]>([]);
 
   const handleNextBeat = () => {
-    if (!selectedBeat) return;
+  if (!selectedBeat) return;
+
+  if (shuffleEnabled) {
+      let queue = [...shuffleQueue];
+
+      if (queue.length === 0) {
+        queue = generateShuffleQueue(selectedBeat);
+      }
+
+      const nextBeat = queue[0];
+
+      setShuffleQueue(queue.slice(1));
+      setSelectedBeat(nextBeat);
+
+      return;
+    }
 
     const currentIndex = beats.findIndex(
       (beat) => beat.id === selectedBeat.id
@@ -39,23 +56,33 @@ export default function Home() {
     setSelectedBeat(beats[previousIndex]);
   };
 
-  const handleShuffleBeat = () => {
-    if (beats.length === 0) return;
-
-    if (!selectedBeat) {
-      setSelectedBeat(beats[Math.floor(Math.random() * beats.length)]);
-      setAutoPlay(true);
-      return;
+  const toggleShuffle = () => {
+    if (!shuffleEnabled) {
+      setShuffleQueue(generateShuffleQueue(selectedBeat));
     }
 
-    let randomIndex;
-
-    do {
-      randomIndex = Math.floor(Math.random() * beats.length);
-    } while (beats[randomIndex].id === selectedBeat.id);
-
-    setSelectedBeat(beats[randomIndex]);
+    setShuffleEnabled((prev) => !prev);
   };
+
+  const generateShuffleQueue = (currentBeat: Beat | null) => {
+  const queue = [...beats];
+
+  // Fisher-Yates
+  for (let i = queue.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [queue[i], queue[j]] = [queue[j], queue[i]];
+  }
+
+  if (currentBeat) {
+    const index = queue.findIndex((beat) => beat.id === currentBeat.id);
+
+    if (index !== -1) {
+      queue.splice(index, 1);
+    }
+  }
+
+  return queue;
+};
 
   return (
     <>
@@ -78,7 +105,8 @@ export default function Home() {
             autoPlay={autoPlay}
             onNext={handleNextBeat}
             onPrevious={handlePreviousBeat}
-            onShuffle={handleShuffleBeat}
+            shuffleEnabled={shuffleEnabled}
+            onToggleShuffle={toggleShuffle}
           />
         </main>
       )}

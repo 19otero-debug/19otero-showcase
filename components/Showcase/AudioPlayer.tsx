@@ -19,7 +19,8 @@ interface AudioPlayerProps {
   autoPlay: boolean;
   onNext: () => void;
   onPrevious: () => void;
-  onShuffle: () => void;
+  shuffleEnabled: boolean;
+  onToggleShuffle: () => void;
 }
 
 export default function AudioPlayer({
@@ -27,7 +28,8 @@ export default function AudioPlayer({
   autoPlay,
   onNext,
   onPrevious,
-  onShuffle,
+  shuffleEnabled,
+  onToggleShuffle,
 }: AudioPlayerProps) {
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const wasPlayingRef = useRef(false);
@@ -321,9 +323,13 @@ export default function AudioPlayer({
               <button
                 onClick={() => {
                   wasPlayingRef.current = isPlaying;
-                  onShuffle();
+                  onToggleShuffle();
                 }}
-                className="flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/5 text-white transition hover:scale-105 hover:border-violet-500 hover:bg-violet-500/15"
+                className={`flex h-11 w-11 items-center justify-center rounded-full border transition duration-200 hover:scale-105 ${
+                  shuffleEnabled
+                    ? "border-violet-500 bg-violet-600 text-white shadow-lg shadow-violet-600/30"
+                    : "border-white/10 bg-white/5 text-white hover:border-violet-500 hover:bg-violet-500/15"
+                }`}
               >
                 <Shuffle size={18} />
               </button>

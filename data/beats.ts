@@ -187,7 +187,7 @@ export const beats: Beat[] = [
 {
     id: 8,
     title: "POW",
-    genre: "Trap Soul",
+    genre: "Craz3teki type beat",
     bpm: 132,
     key: "G# Minor",
     cover: "/covers/pow cover.jpg",
@@ -206,8 +206,32 @@ export const beats: Beat[] = [
     ],
   },
 
+
   {
     id: 9,
+    title: "TERRY ROZIER",
+    genre: "1oneam type beat",
+    bpm: 130,
+    key: "D# Minor",
+    cover: "/covers/terry rozier cover1.jpg",
+    audio: "/beats/terry rozier.mp3",
+    createdAt: "2026-04-06",
+
+    description:
+      "Trap",
+
+    tags: [
+      "bounce",
+      "lead",
+      "underground",
+      "like",
+      "grah",
+      "19otero"
+    ],
+  },
+
+  {
+    id: 10,
     title: "EXMPLE",
     genre: "wtvr",
     bpm: 135,

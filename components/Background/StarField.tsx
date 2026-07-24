@@ -1,17 +1,30 @@
 "use client";
 
-import { useMemo } from "react";
+import { useEffect, useState } from "react";
+
+type Star = {
+  id: number;
+  x: number;
+  y: number;
+  size: number;
+  opacity: number;
+  blur: boolean;
+};
 
 export default function StarField() {
-  const stars = useMemo(() => {
-    return Array.from({ length: 220 }, (_, i) => ({
-      id: i,
-      x: Math.random() * 100,
-      y: Math.random() * 100,
-      size: Math.random() * 2.5 + 1,
-      opacity: Math.random() * 0.5 + 0.2,
-      blur: Math.random() > 0.8,
-    }));
+  const [stars, setStars] = useState<Star[]>([]);
+
+  useEffect(() => {
+    setStars(
+      Array.from({ length: 220 }, (_, i) => ({
+        id: i,
+        x: Math.random() * 100,
+        y: Math.random() * 100,
+        size: Math.random() * 2.5 + 1,
+        opacity: Math.random() * 0.5 + 0.2,
+        blur: Math.random() > 0.8,
+      }))
+    );
   }, []);
 
   return (
