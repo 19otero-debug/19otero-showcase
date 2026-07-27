@@ -303,7 +303,7 @@ export const beats: Beat[] = [
 
     {
     id: 13,
-    title: "CHICKEN NOODLES ",
+    title: "NOODLES (ft. @mlodyhubson) ",
     genre: "Lucki type beat",
     bpm: 140,
     key: "G# Minor",
@@ -327,7 +327,7 @@ export const beats: Beat[] = [
 
     {
     id: 14,
-    title: "CERTIFIEDD",
+    title: "CERTIFIED (ft. @kidnxtdoor)",
     genre: "Swapa type beat",
     bpm: 154,
     key: "C# Minor",
