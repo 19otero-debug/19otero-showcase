@@ -162,24 +162,23 @@ export const beats: Beat[] = [
 
   {
     id: 7,
-    title: "ULTIMATE",
-    genre: "Nine Vicious type beat",
-    bpm: 138,
-    key: "D# Minor",
-    cover: "/covers/ultimatum cover.jpg",
-    audio: "/beats/ultimatum.mp3",
-    createdAt: "2026-07-02",
+    title: "VENUS",
+    genre: "Glokk40spaz type beat",
+    bpm: 137,
+    key: "C Minor",
+    cover: "/covers/venus cover.jpg",
+    audio: "/beats/venus.mp3",
+    createdAt: "2026-07-25",
 
     description:
       "Trap",
 
     tags: [
-      "ultimate",
-      "ultimatum",
-      "denzel curry",
-      "sample",
-      "808",
+      "pluggnb",
+      "demonz",
       "piano",
+      "ep",
+      "melodic",
       "19otero"
     ],
   },
@@ -256,8 +255,8 @@ export const beats: Beat[] = [
 
     {
     id: 11,
-    title: "SHINE",
-    genre: "Glokk40spaz type beat (ft. @ihatexanaxbars)",
+    title: "SHINE (ft. @ihatexanaxbars)",
+    genre: "Glokk40spaz type beat ",
     bpm: 143,
     key: "D Minor",
     cover: "/covers/shine cover (2).jpg",
@@ -280,12 +279,12 @@ export const beats: Beat[] = [
 
     {
     id: 12,
-    title: "NICOTINE",
+    title: "NICOTINE (ft. @jrmxdethis)",
     genre: "Swapa type beat",
     bpm: 160,
     key: "D# Minor",
     cover: "/covers/nicotine cover.jpg",
-    audio: "/beats/nicotine D#m @19otero @jrmxdethis.mp3",
+    audio: "/beats/nicotine.mp3",
     createdAt: "2026-07-27",
 
     description:
@@ -304,12 +303,12 @@ export const beats: Beat[] = [
 
     {
     id: 13,
-    title: "CHICKEN NOODLES",
+    title: "CHICKEN NOODLES ",
     genre: "Lucki type beat",
     bpm: 140,
     key: "G# Minor",
     cover: "/covers/chicken noodles cover.jpg",
-    audio: "/beats/chicken noodles 140 G#m @mlodyhubson @19otero.mp3",
+    audio: "/beats/chicken noodles.mp3",
     createdAt: "2026-07-27",
 
     description:
@@ -333,7 +332,7 @@ export const beats: Beat[] = [
     bpm: 154,
     key: "C# Minor",
     cover: "/covers/certifiedd cover.jpg",
-    audio: "/beats/certifiedd 154 C#m @19otero @kidnxtdoor.mp3",
+    audio: "/beats/certifiedd.mp3",
     createdAt: "2026-07-27",
 
     description:
