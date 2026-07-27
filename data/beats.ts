@@ -232,6 +232,30 @@ export const beats: Beat[] = [
 
   {
     id: 10,
+    title: "SHOOTA",
+    genre: "Zotamia type beat",
+    bpm: 135,
+    key: "E Minor",
+    cover: "/covers/shoot em cover.jpg",
+    audio: "/beats/shoota Em 135bpm.mp3",
+    createdAt: "2026-07-27",
+
+    description:
+      "Trap",
+
+    tags: [
+      "zootamia",
+      "shoot",
+      "paint",
+      "hard",
+      "808",
+      "dolan",
+      "19otero"
+    ],
+  },
+
+  {
+    id: 11,
     title: "EXMPLE",
     genre: "wtvr",
     bpm: 135,
