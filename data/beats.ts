@@ -16,7 +16,7 @@ export const beats: Beat[] = [
   {
     id: 1,
     title: "DID THAT",
-    genre: "Breakcore",
+    genre: "Pinkpantheress type beat",
     bpm: 192,
     key: "A# Minor",
     cover: "/covers/breakcore cover1.jpg",
@@ -41,7 +41,7 @@ export const beats: Beat[] = [
   {
     id: 2,
     title: "STUDIE",
-    genre: "Rage",
+    genre: "Rexv2 type beat",
     bpm: 138,
     key: "D Minor",
     cover: "/covers/studie cover.jpg",
@@ -114,7 +114,7 @@ export const beats: Beat[] = [
   {
     id: 5,
     title: "GRIMES (ft. @3xnul)",
-    genre: "Underground",
+    genre: "Tana type beat",
     bpm: 130,
     key: "A Minor",
     cover: "/covers/grimes cover.jpg",
@@ -163,7 +163,7 @@ export const beats: Beat[] = [
   {
     id: 7,
     title: "ULTIMATE",
-    genre: "Denzel Curry Sample",
+    genre: "Nine Vicious type beat",
     bpm: 138,
     key: "D# Minor",
     cover: "/covers/ultimatum cover.jpg",
@@ -254,27 +254,102 @@ export const beats: Beat[] = [
     ],
   },
 
-  {
+    {
     id: 11,
-    title: "EXMPLE",
-    genre: "wtvr",
-    bpm: 135,
-    key: "E Minor",
-    cover: "/covers/default-cover.jpg",
-    audio: "/beats/after-hours.mp3",
-    createdAt: "2025-07-08",
+    title: "SHINE",
+    genre: "Glokk40spaz type beat (ft. @ihatexanaxbars)",
+    bpm: 143,
+    key: "D Minor",
+    cover: "/covers/shine cover (2).jpg",
+    audio: "/beats/shine 143 Dm @19otero @ihatexanaxbars.mp3",
+    createdAt: "2026-07-27",
 
     description:
-      "Trap soul instrumental combining emotional chords with modern drums and smooth melodies.",
+      "Trap",
 
     tags: [
-      "trap soul",
-      "trap",
-      "soul",
+      "feat",
+      "dolan",
+      "detroit",
       "emotional",
+      "piano",
+      "discord",
+      "19otero"
+    ],
+  },
+
+    {
+    id: 12,
+    title: "NICOTINE",
+    genre: "Swapa type beat",
+    bpm: 160,
+    key: "D# Minor",
+    cover: "/covers/nicotine cover.jpg",
+    audio: "/beats/nicotine D#m @19otero @jrmxdethis.mp3",
+    createdAt: "2026-07-27",
+
+    description:
+      "Trap",
+
+    tags: [
+      "808",
+      "feat",
+      "discord",
+      "beautiful",
       "melodic",
       "smooth",
       "19otero"
     ],
   },
+
+    {
+    id: 13,
+    title: "CHICKEN NOODLES",
+    genre: "Lucki type beat",
+    bpm: 140,
+    key: "G# Minor",
+    cover: "/covers/chicken noodles cover.jpg",
+    audio: "/beats/chicken noodles 140 G#m @mlodyhubson @19otero.mp3",
+    createdAt: "2026-07-27",
+
+    description:
+      "Trap",
+
+    tags: [
+      "lucki",
+      "slayr",
+      "prettifun",
+      "feat",
+      "discord",
+      "lead",
+      "19otero"
+    ],
+  },
+
+    {
+    id: 14,
+    title: "CERTIFIEDD",
+    genre: "Swapa type beat",
+    bpm: 154,
+    key: "C# Minor",
+    cover: "/covers/certifiedd cover.jpg",
+    audio: "/beats/certifiedd 154 C#m @19otero @kidnxtdoor.mp3",
+    createdAt: "2026-07-27",
+
+    description:
+      "Trap",
+
+    tags: [
+      "glo",
+      "sxprano",
+      "digital",
+      "feat",
+      "discord",
+      "808",
+      "19otero"
+    ],
+  },
+
+
+
 ];
