@@ -325,30 +325,120 @@ export const beats: Beat[] = [
     ],
   },
 
-    {
-    id: 14,
-    title: "CERTIFIED (ft. @kidnxtdoor)",
-    genre: "Swapa type beat",
-    bpm: 154,
-    key: "C# Minor",
-    cover: "/covers/certifiedd cover.jpg",
-    audio: "/beats/certifiedd.mp3",
-    createdAt: "2026-07-27",
+  {
+  id: 14,
+  title: "CERTIFIED (ft. @kidnxtdoor)",
+  genre: "Swapa type beat",
+  bpm: 154,
+  key: "C# Minor",
+  cover: "/covers/certifiedd cover.jpg",
+  audio: "/beats/certifiedd.mp3",
+  createdAt: "2026-07-27",
+
+  description:
+    "Trap",
+
+  tags: [
+    "glo",
+    "sxprano",
+    "digital",
+    "feat",
+    "discord",
+    "808",
+    "19otero"
+  ],
+},
+
+{
+    id: 15,
+    title: "TRIP",
+    genre: "Untiljapan type beat",
+    bpm: 148,
+    key: "B Minor",
+    cover: "/covers/trip cover.jpg",
+    audio: "/beats/trip.mp3",
+    createdAt: "2026-07-28",
 
     description:
       "Trap",
 
     tags: [
-      "glo",
-      "sxprano",
+      "melodic",
+      "che",
       "digital",
-      "feat",
-      "discord",
+      "lead",
       "808",
       "19otero"
     ],
   },
 
+  {
+    id: 16,
+    title: "SLATT",
+    genre: "Che type beat",
+    bpm: 134,
+    key: "G# Minor",
+    cover: "/covers/slatt cover (1).jpg",
+    audio: "/beats/slatt.mp3",
+    createdAt: "2026-07-28",
 
+    description:
+      "Trap",
+
+    tags: [
+      "che",
+      "zenology",
+      "digital",
+      "lead",
+      "808",
+      "19otero"
+    ],
+  },
+
+  {
+    id: 17,
+    title: "ARK (ft. @3xnul)",
+    genre: "2slimey type beat",
+    bpm: 150,
+    key: "A# Minor",
+    cover: "/covers/ark cover.jpg",
+    audio: "/beats/ark.mp3",
+    createdAt: "2026-07-28",
+
+    description:
+      "Trap",
+
+    tags: [
+      "che",
+      "feat",
+      "stu",
+      "lead",
+      "808",
+      "19otero"
+    ],
+  },
+
+  {
+    id: 18,
+    title: "SUDANESE (ft. @3xnul)",
+    genre: "Slump6s type beat",
+    bpm: 136,
+    key: "F Minor",
+    cover: "/covers/bongology cover.jpg",
+    audio: "/beats/bongology.mp3",
+    createdAt: "2026-07-28",
+
+    description:
+      "Trap",
+
+    tags: [
+      "che",
+      "bongology",
+      "stu",
+      "feat",
+      "808",
+      "19otero"
+    ],
+  },
 
 ];
