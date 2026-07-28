@@ -441,4 +441,26 @@ export const beats: Beat[] = [
     ],
   },
 
+  {
+    id: 19,
+    title: "OPIOIDS",
+    genre: "Che type beat",
+    bpm: 144,
+    key: "F# Minor",
+    cover: "/covers/opioids cover.jpg",
+    audio: "/beats/opioids.mp3",
+    createdAt: "2026-07-29",
+
+    description:
+      "Trap",
+
+    tags: [
+      "che",
+      "hard",
+      "lead",
+      "808",
+      "19otero"
+    ],
+  },
+
 ];
