@@ -463,4 +463,26 @@ export const beats: Beat[] = [
     ],
   },
 
+  {
+    id: 20,
+    title: "SPICY",
+    genre: "Prettifun type beat",
+    bpm: 145,
+    key: "D Minor",
+    cover: "/covers/spicy cover.jpg",
+    audio: "/beats/spicy.mp3",
+    createdAt: "2026-07-30",
+
+    description:
+      "Trap",
+
+    tags: [
+      "slayr",
+      "happy",
+      "stu",
+      "lead",
+      "19otero"
+    ],
+  },
+
 ];
