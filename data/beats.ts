@@ -508,4 +508,73 @@ export const beats: Beat[] = [
     ],
   },
 
+  {
+    id: 22,
+    title: "BRIGHT (ft. @3xnul)",
+    genre: "Yuke type beat",
+    bpm: 140,
+    key: "G Minor",
+    cover: "/covers/bright cover.jpg",
+    audio: "/beats/bright.mp3",
+    createdAt: "2026-07-31",
+
+    description:
+      "Trap",
+
+    tags: [
+      "stu",
+      "pradagabshawty",
+      "feat",
+      "chill",
+      "calm",
+      "19otero"
+    ],
+  },
+
+  {
+    id: 23,
+    title: "BELLTRAP (ft. @3xnul)",
+    genre: "Swapa type beat",
+    bpm: 139,
+    key: "F# Minor",
+    cover: "/covers/belltrap cover.jpg",
+    audio: "/beats/belltrap.mp3",
+    createdAt: "2026-07-31",
+
+    description:
+      "Trap",
+
+    tags: [
+      "stu",
+      "iyrus",
+      "feat",
+      "bell",
+      "calm",
+      "19otero"
+    ],
+  },
+
+  {
+    id: 24,
+    title: "BLIZZEM",
+    genre: "Swapa type beat",
+    bpm: 136,
+    key: "A Minor",
+    cover: "/covers/blizzem cover.jpg",
+    audio: "/beats/blizzem.mp3",
+    createdAt: "2026-07-31",
+
+    description:
+      "Trap",
+
+    tags: [
+      "stu",
+      "iyrus",
+      "feat",
+      "bell",
+      "calm",
+      "19otero"
+    ],
+  },
+
 ];
