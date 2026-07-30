@@ -485,4 +485,27 @@ export const beats: Beat[] = [
     ],
   },
 
+   {
+    id: 21,
+    title: "WAVYO (ft. @3xnul)",
+    genre: "Iyrus type beat",
+    bpm: 130,
+    key: "G# Minor",
+    cover: "/covers/wavyo cover.jpg",
+    audio: "/beats/wavyo.mp3",
+    createdAt: "2026-07-30",
+
+    description:
+      "Trap",
+
+    tags: [
+      "stu",
+      "tony shhnow",
+      "feat",
+      "chill",
+      "calm",
+      "19otero"
+    ],
+  },
+
 ];

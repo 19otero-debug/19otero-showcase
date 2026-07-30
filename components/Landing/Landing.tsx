@@ -39,23 +39,19 @@ export default function Landing({ onEnter }: LandingProps) {
         </h1>
 
         <button
-        style={{
-  position: "relative",
-  zIndex: 9999,
-}}
           onClick={handleClick}
           disabled={leaving}
           className="
-            mt-10
+            mt-12
             cursor-pointer
             rounded-full
             border-2
             border-white/40
-            px-10
-            py-4
-            text-xl
+            px-16
+            py-6
+            text-3xl
             font-semibold
-            tracking-[0.2em]
+            tracking-[0.28em]
             uppercase
             text-white
             transition-all
@@ -66,19 +62,20 @@ export default function Landing({ onEnter }: LandingProps) {
             hover:text-black
             active:scale-95
             disabled:pointer-events-none
-            sm:mt-12
-            sm:px-16
-            sm:py-5
-            sm:text-2xl
-            md:mt-14
-            md:px-24
-            md:py-8
-            md:text-3xl
-            md:tracking-[0.25em]
+
+            sm:mt-14
+            sm:px-24
+            sm:py-7
+            sm:text-4xl
+
+            md:mt-16
+            md:px-32
+            md:py-9
+            md:text-5xl
+            md:tracking-[0.32em]
           "
         >
           ENTER
-          
         </button>
       </div>
     </main>

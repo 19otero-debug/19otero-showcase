@@ -114,10 +114,13 @@ export default function Showcase({
         </header>
 
         <motion.section
-          className="relative z-10 grid justify-center gap-x-10 gap-y-12"
+          className="relative z-10 grid justify-center gap-x-3 gap-y-5 sm:gap-x-10 sm:gap-y-12"
           style={{
             marginTop: "50px",
-            gridTemplateColumns: "repeat(auto-fit, 280px)",
+            gridTemplateColumns:
+            typeof window !== "undefined" && window.innerWidth < 640
+              ? "repeat(3, 120px)"
+              : "repeat(auto-fit, 280px)",
           }}
           variants={containerVariants}
           initial="hidden"
@@ -183,7 +186,7 @@ export default function Showcase({
           </div>
         </footer>
       </div>
-
+<div className="h-[320px] sm:hidden" />
       <div className="sr-only">
         {beats.map((beat) => (
           <article key={beat.id}>

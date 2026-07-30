@@ -1,12 +1,11 @@
 "use client";
 
-import { useState } from "react";
-
+import { useEffect, useState } from "react";
 import StarField from "@/components/Background/StarField";
 import Landing from "@/components/Landing/Landing";
 import Showcase from "@/components/Showcase/Showcase";
 import AudioPlayer from "@/components/Showcase/AudioPlayer";
-
+import MobileAudioPlayer from "@/components/Showcase/MobileAudioPlayer";
 import { Beat, beats } from "@/data/beats";
 
 export default function Home() {
@@ -16,10 +15,24 @@ export default function Home() {
   const [shuffleEnabled, setShuffleEnabled] = useState(false);
   const [shuffleQueue, setShuffleQueue] = useState<Beat[]>([]);
 
-  const handleNextBeat = () => {
-  if (!selectedBeat) return;
+  const [isMobile, setIsMobile] = useState(false);
 
-  if (shuffleEnabled) {
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 640);
+    };
+
+    checkMobile();
+
+    window.addEventListener("resize", checkMobile);
+
+    return () => window.removeEventListener("resize", checkMobile);
+  }, []);
+
+  const handleNextBeat = () => {
+    if (!selectedBeat) return;
+
+    if (shuffleEnabled) {
       let queue = [...shuffleQueue];
 
       if (queue.length === 0) {
@@ -65,24 +78,26 @@ export default function Home() {
   };
 
   const generateShuffleQueue = (currentBeat: Beat | null) => {
-  const queue = [...beats];
+    const queue = [...beats];
 
-  // Fisher-Yates
-  for (let i = queue.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [queue[i], queue[j]] = [queue[j], queue[i]];
-  }
-
-  if (currentBeat) {
-    const index = queue.findIndex((beat) => beat.id === currentBeat.id);
-
-    if (index !== -1) {
-      queue.splice(index, 1);
+    // Fisher-Yates
+    for (let i = queue.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [queue[i], queue[j]] = [queue[j], queue[i]];
     }
-  }
 
-  return queue;
-};
+    if (currentBeat) {
+      const index = queue.findIndex(
+        (beat) => beat.id === currentBeat.id
+      );
+
+      if (index !== -1) {
+        queue.splice(index, 1);
+      }
+    }
+
+    return queue;
+  };
 
   return (
     <>
@@ -91,7 +106,7 @@ export default function Home() {
       {!entered ? (
         <Landing onEnter={() => setEntered(true)} />
       ) : (
-        <main className="pb-32">
+        <main className="pb-72 sm:pb-32">
           <Showcase
             selectedBeat={selectedBeat}
             onSelectBeat={(beat) => {
@@ -100,14 +115,25 @@ export default function Home() {
             }}
           />
 
-          <AudioPlayer
-            beat={selectedBeat}
-            autoPlay={autoPlay}
-            onNext={handleNextBeat}
-            onPrevious={handlePreviousBeat}
-            shuffleEnabled={shuffleEnabled}
-            onToggleShuffle={toggleShuffle}
-          />
+          {isMobile ? (
+            <MobileAudioPlayer
+              beat={selectedBeat}
+              autoPlay={autoPlay}
+              onNext={handleNextBeat}
+              onPrevious={handlePreviousBeat}
+              shuffleEnabled={shuffleEnabled}
+              onToggleShuffle={toggleShuffle}
+            />
+          ) : (
+            <AudioPlayer
+              beat={selectedBeat}
+              autoPlay={autoPlay}
+              onNext={handleNextBeat}
+              onPrevious={handlePreviousBeat}
+              shuffleEnabled={shuffleEnabled}
+              onToggleShuffle={toggleShuffle}
+            />
+          )}
         </main>
       )}
     </>
