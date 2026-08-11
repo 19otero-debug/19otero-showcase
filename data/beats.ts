@@ -577,4 +577,50 @@ export const beats: Beat[] = [
     ],
   },
 
+  {
+    id: 25,
+    title: "PRINT",
+    genre: "1oneam type beat",
+    bpm: 138,
+    key: "A# Minor",
+    cover: "/covers/print cover.jpg",
+    audio: "/beats/print.mp3",
+    createdAt: "2026-08-11",
+
+    description:
+      "Trap",
+
+    tags: [
+      "ireland",
+      "chill",
+      "lead",
+      "bell",
+      "calm",
+      "19otero"
+    ],
+  },
+
+  {
+    id: 26,
+    title: "WILD ONES",
+    genre: "xaviersobased type beat",
+    bpm: 146,
+    key: "A#",
+    cover: "/covers/wild ones cover.jpg",
+    audio: "/beats/wild ones.mp3",
+    createdAt: "2026-08-06",
+
+    description:
+      "Trap",
+
+    tags: [
+      "sample",
+      "vocal",
+      "sia",
+      "stu",
+      "feat",
+      "19otero"
+    ],
+  },
+
 ];
