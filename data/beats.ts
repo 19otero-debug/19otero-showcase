@@ -669,4 +669,27 @@ export const beats: Beat[] = [
     ],
   },
 
+  {
+    id: 29,
+    title: "FLEXXXIN",
+    genre: "Lil Jay type beat",
+    bpm: 158,
+    key: "F# minor",
+    cover: "/covers/flexxxin cover.jpg",
+    audio: "/beats/flexxxin.mp3",
+    createdAt: "2026-08-17",
+
+    description:
+      "Trap",
+
+    tags: [
+      "chicago",
+      "g herbo",
+      "drill",
+      "gangway",
+      "chief keef",
+      "19otero"
+    ],
+  },
+
 ];
