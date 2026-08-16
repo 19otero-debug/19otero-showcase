@@ -623,4 +623,50 @@ export const beats: Beat[] = [
     ],
   },
 
+  {
+    id: 27,
+    title: "DATURA",
+    genre: "Che type beat",
+    bpm: 136,
+    key: "G# minor",
+    cover: "/covers/datura cover.jpg",
+    audio: "/beats/datura.mp3",
+    createdAt: "2026-08-16",
+
+    description:
+      "Trap",
+
+    tags: [
+      "pluck",
+      "serum",
+      "bass",
+      "hard",
+      "808",
+      "19otero"
+    ],
+  },
+
+  {
+    id: 28,
+    title: "DEEP DOWN",
+    genre: "Tana type beat",
+    bpm: 138,
+    key: "D minor",
+    cover: "/covers/deep down cover.jpg",
+    audio: "/beats/deep down.mp3",
+    createdAt: "2026-08-16",
+
+    description:
+      "Trap",
+
+    tags: [
+      "pluck",
+      "serum",
+      "bass",
+      "chill",
+      "melodic",
+      "19otero"
+    ],
+  },
+
 ];
