@@ -692,4 +692,27 @@ export const beats: Beat[] = [
     ],
   },
 
+  {
+    id: 30,
+    title: "DAWN",
+    genre: "Che type beat",
+    bpm: 138,
+    key: "B",
+    cover: "/covers/dawn cover.jpg",
+    audio: "/beats/dawn.mp3",
+    createdAt: "2026-08-17",
+
+    description:
+      "Trap",
+
+    tags: [
+      "serum",
+      "major",
+      "melodic",
+      "plugg",
+      "chord",
+      "19otero"
+    ],
+  },
+
 ];
