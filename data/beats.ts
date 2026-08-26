@@ -715,4 +715,73 @@ export const beats: Beat[] = [
     ],
   },
 
+  {
+    id: 31,
+    title: "UNFAZED",
+    genre: "PZ type beat",
+    bpm: 147,
+    key: "Dm",
+    cover: "/covers/unfazed cover.jpg",
+    audio: "/beats/unfazed.mp3",
+    createdAt: "2026-08-19",
+
+    description:
+      "Trap",
+
+    tags: [
+      "serum",
+      "keys",
+      "dark",
+      "offtempo",
+      "hard",
+      "19otero"
+    ],
+  },
+
+    {
+    id: 32,
+    title: "EAT THEM",
+    genre: "Maajins type beat",
+    bpm: 141,
+    key: "Gm",
+    cover: "/covers/eat them cover.jpg",
+    audio: "/beats/eat them.mp3",
+    createdAt: "2026-08-20",
+
+    description:
+      "Trap",
+
+    tags: [
+      "serum",
+      "strange",
+      "weird",
+      "lead",
+      "serum",
+      "19otero"
+    ],
+  },
+
+  {
+    id: 33,
+    title: "MARNI",
+    genre: "Izaya Tiji type beat",
+    bpm: 143,
+    key: "A#m",
+    cover: "/covers/marni cover.jpg",
+    audio: "/beats/marni.mp3",
+    createdAt: "2026-08-25",
+
+    description:
+      "Trap",
+
+    tags: [
+      "serum",
+      "hard",
+      "keys",
+      "lead",
+      "stu",
+      "19otero"
+    ],
+  },
+
 ];
