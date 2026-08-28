@@ -44,7 +44,7 @@ export const beats: Beat[] = [
     genre: "Rexv2 type beat",
     bpm: 138,
     key: "D Minor",
-    cover: "/covers/studie cover.jpg",
+    cover: "/covers/studie cover 1.jpg",
     audio: "/beats/studie.mp3",
     createdAt: "2026-07-21",
 
@@ -69,7 +69,7 @@ export const beats: Beat[] = [
     genre: "SINN6R type beat",
     bpm: 130,
     key: "F# Minor",
-    cover: "/covers/cant een lie cover.jpg",
+    cover: "/covers/cant een lie cover 1.jpg",
     audio: "/beats/cant een lie.mp3",
     createdAt: "2026-07-19",
 
@@ -94,7 +94,7 @@ export const beats: Beat[] = [
     genre: "Glokk40spazz type beat",
     bpm: 141,
     key: "C# Minor",
-    cover: "/covers/new gen 5 cover1.jpg",
+    cover: "/covers/new gen 5 cover 1.jpg",
     audio: "/beats/new gen 5.mp3",
     createdAt: "2026-02-09",
 
@@ -117,7 +117,7 @@ export const beats: Beat[] = [
     genre: "Tana type beat",
     bpm: 130,
     key: "A Minor",
-    cover: "/covers/grimes cover.jpg",
+    cover: "/covers/grimes cover 1.jpg",
     audio: "/beats/defenestradito.mp3",
     createdAt: "2026-07-04",
 
@@ -142,7 +142,7 @@ export const beats: Beat[] = [
     genre: "Izaya Tiji type beat",
     bpm: 135,
     key: "G Major",
-    cover: "/covers/nova kaine cover.jpg",
+    cover: "/covers/nova kaine cover 1.jpg",
     audio: "/beats/NOVA KAINE @33nul @19otero 135.mp3",
     createdAt: "2026-07-03",
 
@@ -166,7 +166,7 @@ export const beats: Beat[] = [
     genre: "Glokk40spaz type beat",
     bpm: 137,
     key: "C Minor",
-    cover: "/covers/venus cover.jpg",
+    cover: "/covers/venus cover 1.jpg",
     audio: "/beats/venus.mp3",
     createdAt: "2026-07-25",
 
@@ -189,7 +189,7 @@ export const beats: Beat[] = [
     genre: "Craz3teki type beat",
     bpm: 132,
     key: "G# Minor",
-    cover: "/covers/pow cover.jpg",
+    cover: "/covers/pow cover 1.jpg",
     audio: "/beats/pow.mp3",
     createdAt: "2026-06-18",
 
@@ -283,7 +283,7 @@ export const beats: Beat[] = [
     genre: "Swapa type beat",
     bpm: 160,
     key: "D# Minor",
-    cover: "/covers/nicotine cover.jpg",
+    cover: "/covers/nicotine cover 1.jpg",
     audio: "/beats/nicotine.mp3",
     createdAt: "2026-07-27",
 
@@ -307,7 +307,7 @@ export const beats: Beat[] = [
     genre: "Lucki type beat",
     bpm: 140,
     key: "G# Minor",
-    cover: "/covers/chicken noodles cover.jpg",
+    cover: "/covers/chicken noodles cover 2.jpg",
     audio: "/beats/chicken noodles.mp3",
     createdAt: "2026-07-27",
 
@@ -331,7 +331,7 @@ export const beats: Beat[] = [
   genre: "Swapa type beat",
   bpm: 154,
   key: "C# Minor",
-  cover: "/covers/certifiedd cover.jpg",
+  cover: "/covers/certifiedd cover 1.jpg",
   audio: "/beats/certifiedd.mp3",
   createdAt: "2026-07-27",
 
@@ -355,7 +355,7 @@ export const beats: Beat[] = [
     genre: "Untiljapan type beat",
     bpm: 148,
     key: "B Minor",
-    cover: "/covers/trip cover.jpg",
+    cover: "/covers/trip cover 1.jpg",
     audio: "/beats/trip.mp3",
     createdAt: "2026-07-28",
 
@@ -378,7 +378,7 @@ export const beats: Beat[] = [
     genre: "Che type beat",
     bpm: 134,
     key: "G# Minor",
-    cover: "/covers/slatt cover (1).jpg",
+    cover: "/covers/slatt cover 1.jpg",
     audio: "/beats/slatt.mp3",
     createdAt: "2026-07-28",
 
@@ -401,7 +401,7 @@ export const beats: Beat[] = [
     genre: "2slimey type beat",
     bpm: 150,
     key: "A# Minor",
-    cover: "/covers/ark cover.jpg",
+    cover: "/covers/ark cover 1.jpg",
     audio: "/beats/ark.mp3",
     createdAt: "2026-07-28",
 
@@ -424,7 +424,7 @@ export const beats: Beat[] = [
     genre: "Slump6s type beat",
     bpm: 136,
     key: "F Minor",
-    cover: "/covers/bongology cover.jpg",
+    cover: "/covers/sudanese cover 1.jpg",
     audio: "/beats/bongology.mp3",
     createdAt: "2026-07-28",
 
@@ -447,7 +447,7 @@ export const beats: Beat[] = [
     genre: "Che type beat",
     bpm: 144,
     key: "F# Minor",
-    cover: "/covers/opioids cover.jpg",
+    cover: "/covers/opioids cover 1.jpg",
     audio: "/beats/opioids.mp3",
     createdAt: "2026-07-29",
 
@@ -469,7 +469,7 @@ export const beats: Beat[] = [
     genre: "Prettifun type beat",
     bpm: 145,
     key: "D Minor",
-    cover: "/covers/spicy cover.jpg",
+    cover: "/covers/spicy cover 1.jpg",
     audio: "/beats/spicy.mp3",
     createdAt: "2026-07-30",
 
@@ -491,7 +491,7 @@ export const beats: Beat[] = [
     genre: "Iyrus type beat",
     bpm: 130,
     key: "G# Minor",
-    cover: "/covers/wavyo cover.jpg",
+    cover: "/covers/wavyo cover 1.jpg",
     audio: "/beats/wavyo.mp3",
     createdAt: "2026-07-30",
 
@@ -514,7 +514,7 @@ export const beats: Beat[] = [
     genre: "Yuke type beat",
     bpm: 140,
     key: "G Minor",
-    cover: "/covers/bright cover.jpg",
+    cover: "/covers/bright cover 1.jpg",
     audio: "/beats/bright.mp3",
     createdAt: "2026-07-31",
 
@@ -537,7 +537,7 @@ export const beats: Beat[] = [
     genre: "Swapa type beat",
     bpm: 139,
     key: "F# Minor",
-    cover: "/covers/belltrap cover.jpg",
+    cover: "/covers/belltrap cover 1.jpg",
     audio: "/beats/belltrap.mp3",
     createdAt: "2026-07-31",
 
@@ -560,7 +560,7 @@ export const beats: Beat[] = [
     genre: "Swapa type beat",
     bpm: 136,
     key: "A Minor",
-    cover: "/covers/blizzem cover.jpg",
+    cover: "/covers/blizzem cover 1.jpg",
     audio: "/beats/blizzem.mp3",
     createdAt: "2026-07-31",
 
@@ -583,7 +583,7 @@ export const beats: Beat[] = [
     genre: "1oneam type beat",
     bpm: 138,
     key: "A# Minor",
-    cover: "/covers/print cover.jpg",
+    cover: "/covers/print cover 1.jpg",
     audio: "/beats/print.mp3",
     createdAt: "2026-08-11",
 
@@ -606,7 +606,7 @@ export const beats: Beat[] = [
     genre: "xaviersobased type beat",
     bpm: 146,
     key: "A#",
-    cover: "/covers/wild ones cover.jpg",
+    cover: "/covers/wild ones cover 1.jpg",
     audio: "/beats/wild ones.mp3",
     createdAt: "2026-08-06",
 
@@ -629,7 +629,7 @@ export const beats: Beat[] = [
     genre: "Che type beat",
     bpm: 136,
     key: "G# minor",
-    cover: "/covers/datura cover.jpg",
+    cover: "/covers/datura cover 1.jpg",
     audio: "/beats/datura.mp3",
     createdAt: "2026-08-16",
 
@@ -652,7 +652,7 @@ export const beats: Beat[] = [
     genre: "Tana type beat",
     bpm: 138,
     key: "D minor",
-    cover: "/covers/deep down cover.jpg",
+    cover: "/covers/deep down cover 1.jpg",
     audio: "/beats/deep down.mp3",
     createdAt: "2026-08-16",
 
@@ -675,7 +675,7 @@ export const beats: Beat[] = [
     genre: "Lil Jay type beat",
     bpm: 158,
     key: "F# minor",
-    cover: "/covers/flexxxin cover.jpg",
+    cover: "/covers/flexxxin cover 1.jpg",
     audio: "/beats/flexxxin.mp3",
     createdAt: "2026-08-17",
 
@@ -698,7 +698,7 @@ export const beats: Beat[] = [
     genre: "Che type beat",
     bpm: 138,
     key: "B",
-    cover: "/covers/dawn cover.jpg",
+    cover: "/covers/dawn cover 1.jpg",
     audio: "/beats/dawn.mp3",
     createdAt: "2026-08-17",
 
@@ -721,7 +721,7 @@ export const beats: Beat[] = [
     genre: "PZ type beat",
     bpm: 147,
     key: "Dm",
-    cover: "/covers/unfazed cover.jpg",
+    cover: "/covers/unfazed cover 1.jpg",
     audio: "/beats/unfazed.mp3",
     createdAt: "2026-08-19",
 
@@ -767,7 +767,7 @@ export const beats: Beat[] = [
     genre: "Izaya Tiji type beat",
     bpm: 143,
     key: "A#m",
-    cover: "/covers/marni cover.jpg",
+    cover: "/covers/marni cover 1.jpg",
     audio: "/beats/marni.mp3",
     createdAt: "2026-08-25",
 
@@ -780,6 +780,48 @@ export const beats: Beat[] = [
       "keys",
       "lead",
       "stu",
+      "19otero"
+    ],
+  },
+
+  {
+    id: 34,
+    title: "OFFKEY",
+    genre: "Rexv2 type beat",
+    bpm: 129,
+    key: "Fm",
+    cover: "/covers/offkey cover.jpg",
+    audio: "/beats/offkey.mp3",
+    createdAt: "2026-08-28",
+
+    description:
+      "Trap",
+
+    tags: [
+      "weird",
+      "soft",
+      "pad",
+      "19otero"
+    ],
+  },
+
+  {
+    id: 35,
+    title: "CAT",
+    genre: "TDF type beat",
+    bpm: 132,
+    key: "B",
+    cover: "/covers/cat cover.jpg",
+    audio: "/beats/cat.mp3",
+    createdAt: "2026-08-28",
+
+    description:
+      "Trap",
+
+    tags: [
+      "perc40",
+      "soft",
+      "major",
       "19otero"
     ],
   },
