@@ -846,5 +846,68 @@ export const beats: Beat[] = [
       "19otero"
     ],
   },
+  
+  {
+    id: 37,
+    title: "XPERIMENT (ft. @3xnul)",
+    genre: "Nettspend type beat",
+    bpm: 130,
+    key: "Gm",
+    cover: "/covers/xperiment cover.jpg",
+    audio: "/beats/xperiment.mp3",
+    createdAt: "2026-08-30",
+
+    description:
+      "Trap",
+
+    tags: [
+      "sample",
+      "soft",
+      "vocal",
+      "19otero"
+    ],
+  },
+
+  {
+    id: 38,
+    title: "$$$ (ft. @3xnul)",
+    genre: "Nettspend type beat",
+    bpm: 140,
+    key: "Fm",
+    cover: "/covers/$$$ cover 1.jpg",
+    audio: "/beats/$$$.mp3",
+    createdAt: "2026-08-30",
+
+    description:
+      "Trap",
+
+    tags: [
+      "sample",
+      "matt ox",
+      "vocal",
+      "19otero"
+    ],
+  },
+
+  {
+    id: 39,
+    title: "END IT (ft. @3xnul)",
+    genre: "Boohavinn type beat",
+    bpm: 115,
+    key: "Fm",
+    cover: "/covers/end it cover.jpg",
+    audio: "/beats/end it.mp3",
+    createdAt: "2026-08-31",
+
+    description:
+      "Trap",
+
+    tags: [
+      "slow",
+      "dark",
+      "piano",
+      "19otero"
+    ],
+  },
 
 ];
