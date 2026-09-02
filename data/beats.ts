@@ -891,21 +891,21 @@ export const beats: Beat[] = [
 
   {
     id: 39,
-    title: "END IT (ft. @3xnul)",
-    genre: "Boohavinn type beat",
-    bpm: 115,
-    key: "Fm",
+    title: "RARELY",
+    genre: "Nettspend type beat",
+    bpm: 140,
+    key: "A#maj",
     cover: "/covers/end it cover.jpg",
-    audio: "/beats/end it.mp3",
-    createdAt: "2026-08-31",
+    audio: "/beats/rarely.mp3",
+    createdAt: "2026-09-01",
 
     description:
       "Trap",
 
     tags: [
-      "slow",
+      "vocal",
       "dark",
-      "piano",
+      "808",
       "19otero"
     ],
   },
