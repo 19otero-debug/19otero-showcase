@@ -910,4 +910,25 @@ export const beats: Beat[] = [
     ],
   },
 
+  {
+    id: 40,
+    title: "IN LOVE",
+    genre: "Yuke type beat",
+    bpm: 141,
+    key: "G#maj",
+    cover: "/covers/in love cover.jpg",
+    audio: "/beats/in love.mp3",
+    createdAt: "2026-09-02",
+
+    description:
+      "Trap",
+
+    tags: [
+      "vocal",
+      "happy",
+      "japanese",
+      "19otero"
+    ],
+  },
+
 ];
