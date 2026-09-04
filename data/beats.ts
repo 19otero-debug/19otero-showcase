@@ -931,4 +931,26 @@ export const beats: Beat[] = [
     ],
   },
 
+  {
+    id: 41,
+    title: "BLAIR",
+    genre: "Lucy Bedroque type beat",
+    bpm: 145,
+    key: "Gm",
+    cover: "/covers/clair cover 1.jpg",
+    audio: "/beats/clair.mp3",
+    createdAt: "2026-09-04",
+
+    description:
+      "Trap",
+
+    tags: [
+      "vocal",
+      "dark",
+      "808",
+      "19otero"
+    ],
+  },
+
+
 ];
