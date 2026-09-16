@@ -952,5 +952,25 @@ export const beats: Beat[] = [
     ],
   },
 
+  {
+    id: 42,
+    title: "SERPENT (ft. @3xnul)",
+    genre: "Ronshach type beat",
+    bpm: 137,
+    key: "G#m",
+    cover: "/covers/serpent cover.png",
+    audio: "/beats/serpent.mp3",
+    createdAt: "2026-09-17",
+
+    description:
+      "Trap",
+
+    tags: [
+      "stu",
+      "offtempo",
+      "hard",
+      "19otero"
+    ],
+  },
 
 ];
