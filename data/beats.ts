@@ -973,4 +973,46 @@ export const beats: Beat[] = [
     ],
   },
 
+    {
+    id: 43,
+    title: "LA",
+    genre: "Che type beat",
+    bpm: 150,
+    key: "Fm",
+    cover: "/covers/LA cover 1.jpg",
+    audio: "/beats/LA.mp3",
+    createdAt: "2026-09-19",
+
+    description:
+      "Trap",
+
+    tags: [
+      "stu",
+      "bass",
+      "hard",
+      "19otero"
+    ],
+  },
+
+    {
+    id: 44,
+    title: "Ostrich",
+    genre: "Che type beat",
+    bpm: 143,
+    key: "Dmaj",
+    cover: "/covers/ostrich cover.jpg",
+    audio: "/beats/ostrich.wav",
+    createdAt: "2026-09-18",
+
+    description:
+      "Trap",
+
+    tags: [
+      "stu",
+      "bass",
+      "hard",
+      "19otero"
+    ],
+  },
+
 ];
