@@ -996,7 +996,7 @@ export const beats: Beat[] = [
 
     {
     id: 44,
-    title: "Ostrich",
+    title: "OSTRICH (ft. @3xnul)",
     genre: "Che type beat",
     bpm: 143,
     key: "Dmaj",
@@ -1011,6 +1011,27 @@ export const beats: Beat[] = [
       "stu",
       "bass",
       "hard",
+      "19otero"
+    ],
+  },
+
+  {
+    id: 45,
+    title: "REFLECTION",
+    genre: "Jace type beat",
+    bpm: 144,
+    key: "Cm",
+    cover: "/covers/reflection cover.jpg",
+    audio: "/beats/reflection.mp3",
+    createdAt: "2026-09-21",
+
+    description:
+      "Trap",
+
+    tags: [
+      "stu",
+      "melodic",
+      "soft",
       "19otero"
     ],
   },
