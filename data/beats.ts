@@ -1036,4 +1036,46 @@ export const beats: Beat[] = [
     ],
   },
 
+  {
+    id: 46,
+    title: "I KNOW",
+    genre: "Izaya Tiji type beat",
+    bpm: 141,
+    key: "Am",
+    cover: "/covers/i know cover.jpg",
+    audio: "/beats/i know.mp3",
+    createdAt: "2026-09-23",
+
+    description:
+      "Trap",
+
+    tags: [
+      "stu",
+      "melodic",
+      "soft",
+      "19otero"
+    ],
+  },
+
+  {
+    id: 47,
+    title: "BORSI",
+    genre: "Izaya Tiji type beat",
+    bpm: 143,
+    key: "Emaj",
+    cover: "/covers/borsi cover.jpg",
+    audio: "/beats/borsi.mp3",
+    createdAt: "2026-09-23",
+
+    description:
+      "Trap",
+
+    tags: [
+      "stu",
+      "melodic",
+      "soft",
+      "19otero"
+    ],
+  },
+
 ];
