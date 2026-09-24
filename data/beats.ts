@@ -1078,4 +1078,46 @@ export const beats: Beat[] = [
     ],
   },
 
+  {
+    id: 48,
+    title: "VATIO",
+    genre: "Che type beat",
+    bpm: 144,
+    key: "Gmin",
+    cover: "/covers/vatio cover.jpg",
+    audio: "/beats/vatio.mp3",
+    createdAt: "2026-09-24",
+
+    description:
+      "Trap",
+
+    tags: [
+      "stu",
+      "melodic",
+      "soft",
+      "19otero"
+    ],
+  },
+
+  {
+    id: 49,
+    title: "YOTA",
+    genre: "Pradabagshawty type beat",
+    bpm: 148,
+    key: "Gmaj",
+    cover: "/covers/yota cover.jpg",
+    audio: "/beats/yota.mp3",
+    createdAt: "2026-09-25",
+
+    description:
+      "Trap",
+
+    tags: [
+      "stu",
+      "melodic",
+      "soft",
+      "19otero"
+    ],
+  },
+
 ];
