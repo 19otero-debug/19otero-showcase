@@ -1120,4 +1120,67 @@ export const beats: Beat[] = [
     ],
   },
 
+  {
+    id: 50,
+    title: "MEDULA",
+    genre: "Izaya Tiji type beat",
+    bpm: 141,
+    key: "F#m",
+    cover: "/covers/medula cover.jpg",
+    audio: "/beats/medula.mp3",
+    createdAt: "2026-09-27",
+
+    description:
+      "Trap",
+
+    tags: [
+      "stu",
+      "melodic",
+      "soft",
+      "19otero"
+    ],
+  },
+
+  {
+    id: 51,
+    title: "NINE",
+    genre: "Nine Vicious type beat",
+    bpm: 138,
+    key: "Gmaj",
+    cover: "/covers/nine cover.jpg",
+    audio: "/beats/nine.mp3",
+    createdAt: "2026-09-28",
+
+    description:
+      "Trap",
+
+    tags: [
+      "stu",
+      "melodic",
+      "soft",
+      "19otero"
+    ],
+  },
+
+  {
+    id: 52,
+    title: "ONLY GIRL",
+    genre: "Twosoulsonefate type beat",
+    bpm: 150,
+    key: "Dm",
+    cover: "/covers/every girl cover.jpg",
+    audio: "/beats/only girl.mp3",
+    createdAt: "2026-09-29",
+
+    description:
+      "Trap",
+
+    tags: [
+      "stu",
+      "melodic",
+      "soft",
+      "19otero"
+    ],
+  },
+
 ];
