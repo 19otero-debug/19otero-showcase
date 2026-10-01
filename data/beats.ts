@@ -1267,4 +1267,25 @@ export const beats: Beat[] = [
     ],
   },
 
+  {
+    id: 57,
+    title: "DANCE",
+    genre: "Che type beat",
+    bpm: 164,
+    key: "Fmaj",
+    cover: "/covers/dance cover 1.jpg",
+    audio: "/beats/dance.mp3",
+    createdAt: "2026-10-02",
+
+    description:
+      "Trap",
+
+    tags: [
+      "stu",
+      "melodic",
+      "soft",
+      "19otero"
+    ],
+  },
+
 ];
