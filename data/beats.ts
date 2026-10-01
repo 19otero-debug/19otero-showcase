@@ -117,7 +117,7 @@ export const beats: Beat[] = [
     genre: "Tana type beat",
     bpm: 130,
     key: "Am",
-    cover: "/covers/grimes cover 1.jpg",
+    cover: "/covers/grimes cover 3.jpg",
     audio: "/beats/defenestradito.mp3",
     createdAt: "2026-07-04",
 
@@ -166,7 +166,7 @@ export const beats: Beat[] = [
     genre: "Glokk40spaz type beat",
     bpm: 137,
     key: "Cm",
-    cover: "/covers/venus cover 1.jpg",
+    cover: "/covers/venus cover 3.jpg",
     audio: "/beats/venus.mp3",
     createdAt: "2026-07-25",
 
@@ -447,7 +447,7 @@ export const beats: Beat[] = [
     genre: "Che type beat",
     bpm: 144,
     key: "F#m",
-    cover: "/covers/opioids cover 1.jpg",
+    cover: "/covers/opioids cover 2.jpg",
     audio: "/beats/opioids.mp3",
     createdAt: "2026-07-29",
 
@@ -537,7 +537,7 @@ export const beats: Beat[] = [
     genre: "Swapa type beat",
     bpm: 139,
     key: "F#m",
-    cover: "/covers/belltrap cover 1.jpg",
+    cover: "/covers/belltrap cover 2.jpg",
     audio: "/beats/belltrap.mp3",
     createdAt: "2026-07-31",
 
@@ -606,7 +606,7 @@ export const beats: Beat[] = [
     genre: "xaviersobased type beat",
     bpm: 146,
     key: "A#maj",
-    cover: "/covers/wild ones cover 1.jpg",
+    cover: "/covers/wild ones cover 2.jpg",
     audio: "/beats/wild ones.mp3",
     createdAt: "2026-08-06",
 
@@ -718,10 +718,10 @@ export const beats: Beat[] = [
   {
     id: 31,
     title: "UNFAZED",
-    genre: "PZ type beat",
+    genre: "Kllhhr type beat",
     bpm: 147,
     key: "Dm",
-    cover: "/covers/unfazed cover 1.jpg",
+    cover: "/covers/unfazed cover 2.jpg",
     audio: "/beats/unfazed.mp3",
     createdAt: "2026-08-19",
 
@@ -767,7 +767,7 @@ export const beats: Beat[] = [
     genre: "Izaya Tiji type beat",
     bpm: 143,
     key: "A#m",
-    cover: "/covers/marni cover 1.jpg",
+    cover: "/covers/marni cover 2.jpg",
     audio: "/beats/marni.mp3",
     createdAt: "2026-08-25",
 
@@ -853,7 +853,7 @@ export const beats: Beat[] = [
     genre: "Nettspend type beat",
     bpm: 130,
     key: "Gm",
-    cover: "/covers/xperiment cover.jpg",
+    cover: "/covers/xperiment cover 1.jpg",
     audio: "/beats/xperiment.mp3",
     createdAt: "2026-08-30",
 
@@ -895,7 +895,7 @@ export const beats: Beat[] = [
     genre: "Nettspend type beat",
     bpm: 140,
     key: "A#maj",
-    cover: "/covers/end it cover.jpg",
+    cover: "/covers/rarely cover 2.jpg",
     audio: "/beats/rarely.mp3",
     createdAt: "2026-09-01",
 
@@ -937,7 +937,7 @@ export const beats: Beat[] = [
     genre: "Lucy Bedroque type beat",
     bpm: 145,
     key: "Gm",
-    cover: "/covers/clair cover 1.jpg",
+    cover: "/covers/blair cover 1.jpg",
     audio: "/beats/clair.mp3",
     createdAt: "2026-09-04",
 
@@ -958,7 +958,7 @@ export const beats: Beat[] = [
     genre: "Ronshach type beat",
     bpm: 137,
     key: "G#m",
-    cover: "/covers/serpent cover.png",
+    cover: "/covers/raw cover.png",
     audio: "/beats/serpent.mp3",
     createdAt: "2026-09-17",
 
@@ -1105,7 +1105,7 @@ export const beats: Beat[] = [
     genre: "Pradabagshawty type beat",
     bpm: 148,
     key: "Gmaj",
-    cover: "/covers/yota cover.jpg",
+    cover: "/covers/yota cover 1.jpg",
     audio: "/beats/yota.mp3",
     createdAt: "2026-09-25",
 
@@ -1128,7 +1128,7 @@ export const beats: Beat[] = [
     key: "F#m",
     cover: "/covers/medula cover.jpg",
     audio: "/beats/medula.mp3",
-    createdAt: "2026-09-27",
+    createdAt: "2026-09-26",
 
     description:
       "Trap",
@@ -1149,7 +1149,7 @@ export const beats: Beat[] = [
     key: "Gmaj",
     cover: "/covers/nine cover.jpg",
     audio: "/beats/nine.mp3",
-    createdAt: "2026-09-28",
+    createdAt: "2026-09-26",
 
     description:
       "Trap",
@@ -1170,7 +1170,91 @@ export const beats: Beat[] = [
     key: "Dm",
     cover: "/covers/every girl cover.jpg",
     audio: "/beats/only girl.mp3",
+    createdAt: "2026-09-27",
+
+    description:
+      "Trap",
+
+    tags: [
+      "stu",
+      "melodic",
+      "soft",
+      "19otero"
+    ],
+  },
+
+  {
+    id: 53,
+    title: "BASKIAT",
+    genre: "Iyrus type beat",
+    bpm: 134,
+    key: "Fm",
+    cover: "/covers/baskiat cover.jpg",
+    audio: "/beats/baskiat.mp3",
+    createdAt: "2026-09-28",
+
+    description:
+      "Trap",
+
+    tags: [
+      "stu",
+      "melodic",
+      "soft",
+      "19otero"
+    ],
+  },
+
+  {
+    id: 54,
+    title: "FANNY",
+    genre: "Che type beat",
+    bpm: 138,
+    key: "Gm",
+    cover: "/covers/fanny cover.jpg",
+    audio: "/beats/fanny.mp3",
     createdAt: "2026-09-29",
+
+    description:
+      "Trap",
+
+    tags: [
+      "stu",
+      "melodic",
+      "soft",
+      "19otero"
+    ],
+  },
+
+  {
+    id: 55,
+    title: "PARALLAX",
+    genre: "Che type beat",
+    bpm: 144,
+    key: "Dm",
+    cover: "/covers/parallax cover.jpg",
+    audio: "/beats/parallax.mp3",
+    createdAt: "2026-09-30",
+
+    description:
+      "Trap",
+
+    tags: [
+      "stu",
+      "melodic",
+      "soft",
+      "19otero"
+    ],
+  },
+
+  {
+    id: 56,
+    title: "RAW",
+    genre: "Che type beat",
+    bpm: 174,
+    key: "Bm",
+    cover: "/covers/serpent cover 1.jpg",
+    audio: "/beats/raw.mp3",
+    createdAt: "2026-10-01",
 
     description:
       "Trap",
