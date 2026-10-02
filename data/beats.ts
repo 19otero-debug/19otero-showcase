@@ -1288,4 +1288,67 @@ export const beats: Beat[] = [
     ],
   },
 
+  {
+    id: 58,
+    title: "SLAY",
+    genre: "Zukenne type beat",
+    bpm: 147,
+    key: "F#m",
+    cover: "/covers/slay cover 1.png",
+    audio: "/beats/slay.mp3",
+    createdAt: "2026-10-03",
+
+    description:
+      "Trap",
+
+    tags: [
+      "stu",
+      "melodic",
+      "soft",
+      "19otero"
+    ],
+  },
+
+  {
+    id: 59,
+    title: "SHAKE IT",
+    genre: "Lucy Bedroque type beat",
+    bpm: 142,
+    key: "Bmaj",
+    cover: "/covers/shake it cover.jpg",
+    audio: "/beats/shake it.mp3",
+    createdAt: "2026-10-03",
+
+    description:
+      "Trap",
+
+    tags: [
+      "stu",
+      "melodic",
+      "soft",
+      "19otero"
+    ],
+  },
+
+  {
+    id: 60,
+    title: "PROTON (ft. @3xnul)",
+    genre: "Yung Fazo type beat",
+    bpm: 137,
+    key: "Dm",
+    cover: "/covers/proton cover.jpg",
+    audio: "/beats/proton.wav",
+    createdAt: "2026-10-03",
+
+    description:
+      "Trap",
+
+    tags: [
+      "stu",
+      "melodic",
+      "soft",
+      "19otero"
+    ],
+  },
+
 ];
